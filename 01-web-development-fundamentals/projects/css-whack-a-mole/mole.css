@@ -1,61 +1,61 @@
 /* Your code here */
-.pf {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
+
 .wgs {
-  display: inline-block;
+  height: 482px;
   position: relative;
-  height: 241px;
-  width: 320px;
-  overflow: hidden;
+  width: 640px;
+  display: inline-block;
+  overflow:hidden;
+  
 }
 
 .wgs__mole-head {
+  height: 356px;
   position: absolute;
-  height: 178px;
-  width: 188px;
-  left: 55px;
+  width: 376px;
+  left: 109px;
+  transition: margin-top 0.25s;
+}
+
+.wgs__dirt-pile {
+  height: 220px;
+  position: absolute;
+  width: 640px;
+  top: 262px;
 }
 
 .wgs__mole-head--hidden {
-  margin-top: 241px;
-  transition-property: margin-top;
-  transition-duration: 2.5s;
+  margin-top: 482px;
+  
 }
 
-/* I elected not to style the click event
-.wgs__mole-head--whacked {
-}*/
-
-.wgs__dirt-pile {
-  position: absolute;
-  height: 110px;
-  width: 320px;
-  top: 131px;
+.pf {
+  display: grid ;
+  grid-template-columns: repeat(4, 1fr);
 }
+
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-.sb {
+ .sb {
   background-color: cornflowerblue;
-  border-bottom: 1px solid #645ded;
+  border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   color: white;
   display: flex;
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-}
+} 
 
-.sb__mole-counter {
+ .sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-}
+} 
 
 .sb__score-holder {
   flex: 1 0 0;
-}
+} 
 
-.sb__game-over--hidden {
+ .sb__game-over--hidden {
   display: none;
-}
+} 
