@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body, h1 {
+    font-family: 'Titillium Web', sans-serif;
+    color: white
+}
+
+.nav {
+    padding: 15px 10px;
+    background-color: #03045e;
+    color: white;
+  
+}
+
+.nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    
+}
+
+.nav > ul > li {
+    list-style: none;
+    margin: 8px;
+    font-size: 20px;
+
+
+}
+
+.nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#focused {
+    color: #90e0ef;
+}
+
+.hero {
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/uriel-sc-11KDtiUWRq4-unsplash.jpg");
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    color: #03045e;
+    padding: 50px;
+    column-gap: 20px;
+}
+
+.page-title {
+    background: #023e8a;
+    padding: 20px;
+    text-align: center;
+}
+
+.program {
+    color: #03045e;
+    padding: 50px
+}
+
+.program > ul > li {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.program > ul > li > a {
+    text-decoration: none;
+    color: #03045e;
+}
+
+.reference-list {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.reference-list > a {
+    height: 300px;
+    max-width: 100%;
+    background-size: contain;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 5px black;
+}
+
+.reference-list > a:hover {
+    border: solid 3px #0077b6;
+}
+
+#reference1 {
+    background-image: url("./assets/mathieu-stern-1zO4O3Z0UJA-unsplash.jpg");
+}
+
+#reference2 {
+    background-image: url("./assets/muzammil-soorma-9MByoiBNN1c-unsplash.jpg");
+}
+
+#reference3 {
+    background-image: url("./assets/sigmund-OKeu92CvolE-unsplash.jpg");
+}
+
+#reference4 {
+    background-image: url("./assets/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg");
+}
+
+#reference5 {
+    background-image: url("./assets/dhehaivan-FXCvslpSeUY-unsplash.jpg");
+}
+
+#reference6 {
+    background-image: url("./assets/ian-schneider-TamMbr4okv4-unsplash.jpg");
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.contact-form {
+    color: #03045e;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    color:#03045e;
+}
+
+.field > label {
+    width: 50%;
+}
+
+.form-img {
+    background-image: url("./assets/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg");
+    background-size: cover;
+    background-position: 110%;
+    width: 50%;
+    margin: 20px;
+
+}
+
+.mv0 {
+    margin:0;
+}
+
+.center {
+    align-self: center;
+}
+
+.end {
+    align-self: flex-end;
+}
+
+p.end {
+    padding-right: 40px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.btn {
+    padding: 20px 40px;
+    border: none;
+    background: #0077b6;
+    font-size: 20px;
+    border-radius: 5%;
+    color: white;
+}
