@@ -17,7 +17,8 @@ const and = (A, B) => {
 
 // 'cb' parameter should be either 'OR' or 'AND' functions from above
 const calculateTruthTable = (A, cb, B,) => {
-  console.log(cb(A, B));
+  return (cb(A,B));
+  //console.log(cb(A, B));
 };
 
 module.exports = {
