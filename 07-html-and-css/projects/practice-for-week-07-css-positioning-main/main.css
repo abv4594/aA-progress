@@ -1,0 +1,73 @@
+html, body {
+    font-family: sans-serif;
+    overflow: scroll;
+}
+
+body {
+    height: 5000px;
+}
+
+.container {
+    background-color: #2b2d2f;
+    position: relative;
+    overflow: scroll;
+}
+
+.element {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 280px;
+    font-size: 36px;
+}
+
+#yellow-box {
+    background-color: #ffff00;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: ;
+}
+
+#pink-box {
+    background-color: #ff69b4;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: ;
+}
+
+#blue-box {
+    background-color: #00eeee;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    top: 500px;
+    z-index: ;
+}
+
+#red-box {
+    background-color: #ff0000;
+    position: fixed;
+    bottom: 0;
+    
+    right: 100px;
+    top: 500px;
+    height: 500px;
+    z-index: ;
+}
+
+#orange-box {
+    background-color: #ffa500;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: ;
+}

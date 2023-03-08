@@ -1,0 +1,65 @@
+a {
+    text-decoration: none;
+}
+
+#root {
+    padding: 0 10%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav__upper {
+    position: relative;
+}
+
+.nav__lower {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.upper__left {
+    display: inline-block;
+}
+
+.upper__right {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    
+}
+
+.upper__right > a {
+    font-size: small;
+    color: rgb(112,164,97);
+}
+
+.sign-in {
+    margin-right: 10px;
+}
+
+.get-started {
+    border: solid 1px rgb(112,164,97);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.nav__lower > a {
+    padding: 0 5%;
+    font-size: smaller;
+    color: rgb(149, 150, 170);
+}
+
+.content {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.content > h1 {
+    margin: 0 auto;
+}
+.main__img {
+    display: block;
+    margin: 30px auto;
+}
