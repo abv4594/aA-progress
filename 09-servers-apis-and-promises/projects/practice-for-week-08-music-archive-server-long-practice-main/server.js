@@ -302,6 +302,6 @@ function findSongsAlbumId(id) {
   return songsInAlbum
 }
 
-const port = process.env.port || 5000;
+const port = process.env.port || 3000;
 
 server.listen(port, () => console.log('Server is listening on port', port));
