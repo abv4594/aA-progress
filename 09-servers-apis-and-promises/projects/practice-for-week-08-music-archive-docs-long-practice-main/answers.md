@@ -384,16 +384,29 @@ Response components:
 
 Request components:
 
-- Method:
-- URL:
+- Method: PUT/PATCH
+- URL: /songs/:songId
 - Headers:
+    Content-Type: application/json
 - Body:
+ ```json
+ {
+    "name": "Quero Chiclete",
+    "lyrics": "Quero chiclete chiclete\n quero chiclete!",
+    "trackNumber": 1,
+    "albumId": 1
+}
+ 
+ ```
 
 Response components:
 
-- Status code:
+- Status code: 200
 - Headers:
+    Content-Type: application/json
 - Body:
+
+... edited song
 
 ### Delete a specified song by songId
 
