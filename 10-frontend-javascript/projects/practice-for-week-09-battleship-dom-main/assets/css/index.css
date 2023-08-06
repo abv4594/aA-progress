@@ -1,0 +1,43 @@
+/* Your code here */
+body {
+    text-align: center;
+}
+
+p { 
+    margin-bottom: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9,50px);
+    justify-content: center;
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+.grid-item {
+    border: solid 1px black;
+    place-self: stretch;
+    
+}
+
+.bgRed {
+    background: red;
+}
+
+.bgGreen {
+    background: green;
+}
+
+.bgLightCoral {
+    background: lightcoral;
+}
+
+.bgLightGreen {
+    background: lightgreen;
+}
+
+#reset {
+    margin-top: 20px;
+}
