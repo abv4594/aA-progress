@@ -1,0 +1,58 @@
+/* Your code here */
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    grid-template-areas: 
+    "p00 p01 p02"
+    "p10 p11 p12"
+    "p20 p21 p22";
+}
+
+.p00 {
+    grid-area: p00;
+}
+
+.p01 {
+    grid-area: p01;
+}
+
+.p02 {
+    grid-area: p02;
+}
+
+.p10 {
+    grid-area: p10;
+}
+
+.p11 {
+    grid-area: p11;
+}
+
+.p12 {
+    grid-area: p12;
+}
+
+.p20 {
+    grid-area: p20;
+}
+
+.p21 {
+    grid-area: p21;
+}
+
+.p22 {
+    grid-area: p22;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
