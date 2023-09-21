@@ -32,16 +32,14 @@ app.use(((req, res, next)=> {
   next();
 }))
 
+app.get('/artists/:id', (req, res) => {
+  res.json(getArtistByArtistId(req.params.id));
+});
+
 app.get('/artists', (req, res) => {
   res.status(200);
   res.set('Content-Type', 'application/json');
   res.send(getAllArtists());
-})
-
-app.post('/artists', (req, res)=> {
-  res.status(201);
-  res.set('Content-Type', 'application/json');
-  res.send(addArtist(req.body));
 })
 
 app.get('/artists/latest', (req, res) => {
@@ -56,6 +54,17 @@ app.get('/artists/latest/albums', (req, res) => {
   res.send(getAlbumsForLatestArtist());
 })
 
+app.post('/artists', (req, res)=> {
+  res.status(201);
+  res.set('Content-Type', 'application/json');
+  res.send(addArtist(req.body));
+})
+
+app.put('/artists/:id', (req, res) => {
+  const id = req.params.id;
+  const data = req.body;
+  res.json(editArtistByArtistId(id, data));
+})
 
 // DO NOT MODIFY
 if (require.main === module) {
